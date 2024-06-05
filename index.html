@@ -2,9 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width"
-    <title>
-      Color palatte Generator
-    </title>
+    <meta name="viewport" content="width=device-width"\>
+    <title>Color palatte Generator</title>
+    <link rel="stylesheet" href="style.css">
   </head>  
+
+  <body>
+    <h2>Color Palette Generator</h2>
+    <div class="container">
+      <div id="inputNoSection">
+        <label for="inputNo">Number of Colors:</label>
+        <input id="inputNo" type="number" min="1" max="6" placeholder="Enter numbers">
+        <div id="actionBtn">
+          <button type="button" id="generateBtn" onclick="genColor()">Generate Color</button>
+        </div>
+      </div>
+      <div class="resultDiv">
+        <!-- <div class="colorDiv"><p class="colorText">678789</p></div>
+        <div class="colorDiv"></div>
+        <div class="colorDiv"></div>
+        <div class="colorDiv"></div>
+        <div class="colorDiv"></div>
+        <div class="colorDiv" ></div> -->
+
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
+
