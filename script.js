@@ -13,7 +13,7 @@ function genColor() {
     for (let i = 1; i <= numbers; i++) {
       let randomColorValue = randomNumber();
       // console.log(`Random color value ${randomColorValue}`);
-      htmlText += `<div class="colorDiv" style="background-color: ${randomColorValue};"><p class="colorText" onclick="copy(this)">${randomColorValue}</p></div>`
+      htmlText += `<div class="colorDiv" style="background-color: ${randomColorValue};"><p class="colorText" onclick="copy(this)" title="click to copy">${randomColorValue}</p></div>`
     }
     console.log(htmlText);
     resultDiv.innerHTML = htmlText;
@@ -25,6 +25,7 @@ function randomNumber() {
   return num;
 }
 
+// Copy to clip board function
 function copy(input) {
   let colorText = '#' + input.innerHTML;
   navigator.clipboard.writeText(colorText);
