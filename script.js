@@ -9,6 +9,9 @@ function genColor() {
   if (numbers > 6 ) {
     alert( `The input value should be less than 6`);
   }
+  else if (numbers <= 0 ) {
+    alert( `The input value should not be 0`);
+  }
   else {
     for (let i = 1; i <= numbers; i++) {
       let randomColorValue = randomNumber();
